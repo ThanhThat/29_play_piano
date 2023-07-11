@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+
+  background-image: linear-gradient(100deg, #e84f8a, #fcb2a4);
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.piano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  width: 8rem;
+  height: 8rem;
+  font-size: 3rem;
+  border: none;
+  color: #fff;
+  border-radius: 1rem;
+
+  background-color: #e84f8a;
+  box-shadow: 0 0 2rem #fcb2a4;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+
+  &:hover {
+    background-color: #c02d65;
+  }
+}
